@@ -1,0 +1,24 @@
+from user.models import Host, Participant
+
+# Create Host user 'yag'
+yag = Host.objects.create_user(username='yag', password='R8f3vD2x')
+yag.first_name = "yag"
+yag.last_name = "Sharma"  # You can change the last name if needed
+yag.email = "yag@example.com"
+yag.save()
+
+# Create Participant user 'yagya'
+yagya = Participant.objects.create_user(username='yagya', password='7pB6tQ4n')
+yagya.first_name = "Yagya"
+yagya.last_name = "Singh"  # You can change the last name if needed
+yagya.email = "yagya@example.com"
+yagya.save()
+
+# Print the roles to confirm
+print(yag.role)  # Should output 'HOST'
+print(yagya.role)  # Should output 'PARTICIPANT'
+
+priyanshu 789@papa
+subhobroto 696969af
+anubhab anu9696fy
+host - mustafa 0106969fy
